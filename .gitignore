@@ -1,1 +1,6 @@
 node_modules
+
+*.tgz
+
+index.js
+index.d.ts

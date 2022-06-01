@@ -1,23 +1,24 @@
 {
-  "name": "js-levenshtein",
-  "version": "1.1.6",
-  "description": "The most efficient JS implementation calculating the Levenshtein distance, i.e. the difference between two strings.",
+  "name": "ts-levenshtein",
+  "version": "1.0.0",
+  "description": "The most efficient TS implementation calculating the Levenshtein distance, i.e. the difference between two strings.",
   "license": "MIT",
-  "repository": "gustf/js-levenshtein",
+  "repository": "knightjdr/ts-levenshtein",
   "author": {
-    "name": "Gustaf Andersson",
-    "email": "gustaf@me.com"
+    "name": "James Knight",
+    "email": "knightjdr@gmail.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=16.0.0"
   },
+  "type": "module",
   "scripts": {
-    "test": "ava",
-    "bench": "matcha bench.js"
+    "build": "tsc",
+    "prepublish": "tsc",
+    "test": "jest"
   },
-  "files": [
-    "index.js"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "levenshtein",
     "distance",
@@ -38,12 +39,11 @@
     "matching"
   ],
   "devDependencies": {
-    "ava": "^0.25.0",
-    "fast-levenshtein": "^2.0.6",
-    "levenshtein-edit-distance": "^2.0.3",
-    "matcha": "^0.7.0",
-    "talisman": "^0.21.0",
-    "leven": "^2.1.0",
-    "xo": "^0.23.0"
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0",
+    "typescript": "^4.7.2"
   }
 }

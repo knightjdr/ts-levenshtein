@@ -1,0 +1,9 @@
+node_modules
+
+*.tgz
+
+babel.config.cjs
+jest.config.mjs
+index.ts
+index.test.js
+tsconfig.json
