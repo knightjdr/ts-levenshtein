@@ -1,6 +1,6 @@
 {
   "name": "ts-levenshtein",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The most efficient TS implementation calculating the Levenshtein distance, i.e. the difference between two strings.",
   "license": "MIT",
   "repository": "knightjdr/ts-levenshtein",
